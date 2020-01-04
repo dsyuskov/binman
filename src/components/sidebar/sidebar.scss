@@ -1,0 +1,33 @@
+@import '../../constants/colors.scss';
+
+.sidebar {
+  width: 5rem;
+  height: calc(100vh - 4.1rem);
+  background: $sidebar-background;
+  box-shadow: inset 0px 15px 10px -15px $sidebar-shadow;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding-top: 0.5rem;
+
+  &__item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 2.5rem;
+    width: 3.1rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+    cursor: pointer;
+
+    &--selected {
+      background: $menu-item-selected;
+      border-radius: 4px;
+      cursor: default;
+    }
+  }
+}
