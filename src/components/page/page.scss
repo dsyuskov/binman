@@ -1,4 +1,28 @@
+@import '../../assets/roboto/roboto.css';
+
 * {
   margin: 0;
   padding: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  grid-template-rows: 2;
+
+  grid-template-areas: 
+  "header header"
+  "sidebar main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.sidebar {
+  grid-area: sidebar;
+}
+
+.main {
+  grid-area: main;
 }
