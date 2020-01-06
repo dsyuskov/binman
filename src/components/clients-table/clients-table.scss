@@ -2,12 +2,16 @@
 
 .table {
   position: relative;
+  box-sizing: border-box;
+  width: 100%;
   padding-top: 1rem;
   border-radius: 3px;
 
   &__head {
     display: grid;
-    grid-template-columns: 25.5% 19.5% 31.5% 23.5%;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 25fr 19fr 31fr 23fr;
     margin-top: 3px;
     margin-bottom: 1px;
     padding: 0.9rem 1.2rem 0.8rem 1.2rem;
