@@ -9,10 +9,11 @@ export default class Page extends React.Component {
   render() {
     return (
     <div className="page">
-      <Header/>
-      <Sidebar/>
-      <Main />
+       <Header/>
+       <Sidebar/>
+       <Main />
     </div>
     )
   }
 }
+
