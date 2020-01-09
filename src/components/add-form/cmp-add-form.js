@@ -1,6 +1,9 @@
 import React from 'react';
 import './add-form.scss';
 
+import FieldRaiting from '../../components/field-rating/cmp-field-rating';
+import FieldFile from '../../components/field-file/cmp-field-file';
+
 export default class AddForm extends React.Component {
 
   render() {
@@ -21,16 +24,10 @@ export default class AddForm extends React.Component {
             <input className="field__input field__dropdown" name="" type="select" placeholder="Выберите вакансию" />
           </div>
 
-          <div className="field">
-            <label className="field__title">Фотография</label>
-            <h6 className="field__comment">Размер вложения файла не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов jpg, png</h6>
-            <div className="field__file-container">
-              <label className="field__button">Выберите файл
-                <input className="field__file-control" type="file" />
-              </label>
-              <input className="field__input field__file" name="" type="text" placeholder="Файл не выбран" />
-            </div>
-          </div>
+          <FieldFile
+            title="Фотография"
+            comment="Размер вложения файла не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов jpg, png"
+          />
         </div>
 
         <div className="form__section">
@@ -49,63 +46,28 @@ export default class AddForm extends React.Component {
 
         <div className="form__section">
           <div className="form__title-section">Резюме и результаты тестового задания</div>
-
-          <div className="field">
-            <label className="field__title">Резюме</label>
-            <h6 className="field__comment">Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов doc, pdf</h6>
-            <div className="field__file-container">
-              <label className="field__button">Выберите файл
-                <input className="field__file-control" type="file" />
-              </label>
-              <input className="field__input field__file" name="" type="text" placeholder="Файл не выбран" />
-            </div>
-          </div>
-          
-          <div className="field">
-            <label className="field__title">Архив с результатами тестового задания</label>
-            <h6 className="field__comment">Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов zip, rar</h6>
-            <div className="field__file-container">
-              <label className="field__button">Выберите файл
-                <input className="field__file-control" type="file" />
-              </label>
-              <input className="field__input field__file" name="" type="text" placeholder="Файл не выбран" />
-            </div>
-          </div>
+          <FieldFile
+            title="Резюме"
+            comment="Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов doc, pdf"
+          />
+          <FieldFile
+            title="Архив с результатами тестового задания"
+            comment="Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов zip, rar"
+          />
         </div>
 
         <div className="form__section">
           <div className="form__title-section">Оценка соискателя</div>
             <div className="field__rating-container">
-              <div className="field__rating">
-                <label className="field__title">Оценка резюме</label>
-                <div className="field__star-container">
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                </div>
-              </div>
-              <div className="field__rating">
-                <label className="field__title">Оценка тестового задания</label>
-                <div className="field__star-container">
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                </div>
-              </div>
-              <div className="field__rating">
-                <label className="field__title">Оценка собеседования</label>
-                <div className="field__star-container">
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                  <img className="field__star" src={require("./rating-1.svg")} alt="star"/>
-                </div>
-              </div>
+              <FieldRaiting 
+                title="Оценка резюме"
+              />
+              <FieldRaiting 
+                title="Оценка тестового задания"
+              />
+              <FieldRaiting
+                title="Оценка собеседования"
+              />
             </div>
           </div>
 

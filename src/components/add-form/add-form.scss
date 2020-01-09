@@ -113,50 +113,10 @@
     cursor: pointer;
   }
 
-  &__file-container {
-    position: relative;
-  }
-
-  &__file {
-    padding-left: 7.5rem;
-  }
-
-  &__button {
-    position: absolute;
-    border: 1px solid green;
-    top: 0.7rem;
-    left: 0.4rem;
-    font-size: 10px;
-    font-weight: 700;
-    line-height: 10px;
-    text-transform: uppercase;
-    color: white;
-    background-color: #386bf2;
-    border-radius: 3px;
-    padding: 0.5rem 0.5rem;
-    cursor: pointer;
-  }
-
-  &__file-control {
-    display: none;
-  }
-
   &__rating-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0.5rem;
   }
 
-  &__rating {
-    width: 31%;
-
-    &-container {
-      margin-bottom: 0.5rem;
-    }
-  }
-
-  &__star {
-    margin-top: 0.2rem;
-    margin-right: 0.2rem;
-    cursor: pointer;
-  }
 }
