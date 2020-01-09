@@ -3,6 +3,7 @@ import './add-form.scss';
 
 import FieldRaiting from '../../components/field-rating/cmp-field-rating';
 import FieldFile from '../../components/field-file/cmp-field-file';
+import FieldInput from '../../components/field-input/cmp-field-input';
 
 export default class AddForm extends React.Component {
 
@@ -15,15 +16,14 @@ export default class AddForm extends React.Component {
         <div className="form__section">
           <div className="form__title-section">Основные данные</div>
 
-          <div className="field">
-            <label className="field__title">ФИО</label>
-            <input className="field__input" name="" type="text" placeholder="Введите ФИО" />
-          </div>
-          <div className="field">
-            <label className="field__title">Вакансия</label>
-            <input className="field__input field__dropdown" name="" type="select" placeholder="Выберите вакансию" />
-          </div>
-
+          <FieldInput 
+            title="ФИО"
+            placeholder="Введите ФИО"
+          />
+          <FieldInput 
+            title="Вакансия"
+            placeholder="Выберите вакансию"
+          />
           <FieldFile
             title="Фотография"
             comment="Размер вложения файла не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов jpg, png"
@@ -32,16 +32,16 @@ export default class AddForm extends React.Component {
 
         <div className="form__section">
           <div className="form__title-section">Контактные данные</div>
-          <div className="field">
-            <label className="field__title">Номер телефона</label>
-            <input className="field__input" name="" type="text" placeholder="Введите номер телефона" />
-            <h6 className="field__add">Добавить еще один номер телефона</h6>
-          </div>
-          <div className="field">
-            <label className="field__title">E-Mail</label>
-            <input className="field__input field__dropdown" name="" type="text" placeholder="Введите e-mail" />
-            <h6 className="field__add">Добавить еще один e-mail</h6>
-          </div>
+          <FieldInput 
+            title="Номер телефона"
+            placeholder="Введите номер телефона"
+            add="Добавить еще один номер телефона"
+          />
+          <FieldInput
+            title="E-Mail"
+            placeholder="Введите e-mail"
+            add="Добавить еще один e-mail"
+          />
         </div>
 
         <div className="form__section">
