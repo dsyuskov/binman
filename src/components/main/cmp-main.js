@@ -5,9 +5,15 @@ import Clients from '../clients/cmp-clients';
 import AddForm from '../add-form/cmp-add-form';
 
 export default function Main() {
+  function handleSubmit(values) {
+    window.alert(JSON.stringify(values))
+  }
   return (
     <main className="main">
-      <AddForm />
+      <AddForm 
+        onSubmit={handleSubmit}
+      />
+
     </main>
   )
 }

@@ -1,15 +1,18 @@
 import React from 'react';
+import { Field, reduxForm } from 'redux-form';
 import './add-form.scss';
 
 import FieldRaiting from '../../components/field-rating/cmp-field-rating';
 import FieldFile from '../../components/field-file/cmp-field-file';
 import FieldInput from '../../components/field-input/cmp-field-input';
 
-export default class AddForm extends React.Component {
-
+class AddForm extends React.Component {
   render() {
     return (
-      <div className="form">
+      <form 
+        className="form"
+        onSubmit={this.props.handleSubmit}
+      >
         <div className="form__section">
           <div className="form__title-form">Добавление соискателя</div>
         </div>
@@ -19,10 +22,12 @@ export default class AddForm extends React.Component {
           <FieldInput 
             title="ФИО"
             placeholder="Введите ФИО"
+            name="name"
           />
           <FieldInput 
             title="Вакансия"
             placeholder="Выберите вакансию"
+            name="vacansy"
           />
           <FieldFile
             title="Фотография"
@@ -36,11 +41,13 @@ export default class AddForm extends React.Component {
             title="Номер телефона"
             placeholder="Введите номер телефона"
             add="Добавить еще один номер телефона"
+            name="phone"
           />
           <FieldInput
             title="E-Mail"
             placeholder="Введите e-mail"
             add="Добавить еще один e-mail"
+            name="email"
           />
         </div>
 
@@ -74,10 +81,16 @@ export default class AddForm extends React.Component {
         <div className="form__section">
           <div className="form__button-container">
             <button className="form__button form__button--cancel">Отменить</button>
-            <button className="form__button form__button--add">Добаить соискателя</button>
+            <button className="form__button form__button--add" type="submit">Добаить соискателя</button>
           </div>
         </div>
-      </div>
+      </form>
     )
   }
 }
+
+AddForm = reduxForm({
+  form: 'addForm'
+})(AddForm)
+
+export default AddForm;
