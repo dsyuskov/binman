@@ -2,7 +2,6 @@ import React from 'react';
 import './clients-head.scss';
 
 export default function ClientsHead(props) {
-  console.log(props);
   return (
     <div className="clients__head">
       <div className="clients__title">
@@ -12,9 +11,12 @@ export default function ClientsHead(props) {
       <div className="clients__buttons">
         <button 
           className="button button--favorite"
-          onClick={props.onClick}
+          onClick={props.onFavoriteButtonClick}
         >Избранные</button>
-        <button className="button button--add-client">Добавить соискателя</button>
+        <button
+          className="button button--add-client"
+          onClick={props.onOpenAddFormButtonClick}
+        >Добавить соискателя</button>
       </div>
     </div>
   )

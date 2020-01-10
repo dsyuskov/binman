@@ -1,9 +1,12 @@
 @import '../../constants/colors.scss';
 
 .header {
+  position: fixed;;
   height: 4.1rem;
   display: flex;
   align-items: center;
   padding-left: 1.7rem;
   background: $header-background;
+  width: 100%;
+  z-index: 2;
 }
