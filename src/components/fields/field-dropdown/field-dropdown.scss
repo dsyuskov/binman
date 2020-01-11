@@ -1,0 +1,10 @@
+@import '../field.scss';
+
+.field__dropdown {
+  background: url("./icon-arrow.svg") no-repeat right 1rem top 50%;
+  background-color: $field-input-background;
+  margin-right: 1rem;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
