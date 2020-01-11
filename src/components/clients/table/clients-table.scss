@@ -1,0 +1,28 @@
+@import 'constants/colors.scss';
+@import 'constants/variables.scss';
+
+.table {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 1.4rem;
+  border-radius: $border-radius;
+  font-family: $font-family;
+
+  &-head {
+    display: grid;
+    width: 100%;
+    box-sizing: border-box;
+    grid-template-columns: 25fr 19fr 31fr 23fr;
+    margin-bottom: 0.2rem;
+    padding: 1.6rem 2rem 1.3rem 2rem;
+    border-radius: $border-radius;
+    color: $table-head-text;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    text-align: left;
+    background-color: $table-head-background;
+  }
+}

@@ -21,13 +21,13 @@ export default class FieldInput extends React.Component {
     const { title, placeholder, add, name} = this.props;
     const { fields } = this.state;
     return (
-      <div className="field-input">
-        <label className="field-input__title">{title}</label>
+      <div className="field field-input">
+        <label className="field__title">{title}</label>
         {fields.map((item) => {
           return (
             <Field 
               key={`${name}${item}`}
-              className="field-input__input" 
+              className="field__input" 
               name={`${name}${item}`}
               component="input"
               type="text"
@@ -36,7 +36,7 @@ export default class FieldInput extends React.Component {
         })}
         {add &&
           <h6
-            className="field-input__add"
+            className="field__add"
             onClick={this.handleAddClick}
           >{add}</h6>}
       </div>

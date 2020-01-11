@@ -1,26 +1,69 @@
-$header-background: #29313c;
-$main-background: #f4f9fb;
+// palette colors
+$palette-ebony-clay:         #29313C;
+$palette-bright-gray:        #323a45;
+$palette-mine-shaft:         #222222;
+$palette-charade:            #282e37;
+$palette-black-squeeze:      #f4f9fb;
+$palette-river-bed:          #475364;
+$palette-bali-hai:           #8ea4b5;
+$palette-geyser:             #dbe4e7;
+$palette-white:              #ffffff;
+$palette-black:              #000000;
+$palette-royal-blue:         #386bf2;
+$palette-gray-chateau:       #a3a9b1;
+$palette-mystic:             #dce5ea;
 
-$sidebar-background: #323a45;
-$sidebar-shadow: #222222;
+// Header component
+$header-background:                       $palette-ebony-clay;
 
-$menu-item-selected: #282e37;
+// Sidebar component
+$sidebar-background:                      $palette-bright-gray;
+$sidebar-shadow:                          $palette-mine-shaft;
+$menu-item-selected:                      $palette-charade;
+$menu-item-hover:                         $palette-charade;
 
-$button-background: #386bf2;
-$button-background-favorite: #ffffff;
-$button-text: #ffffff;
-$botton-favorite-border: #dbe4e7;
-$button-favorite-text: #475364;
+// Main component
+$main-background:                         $palette-black-squeeze;
 
-$head-title-h2:#475364;
-$head-title-h4: #8ea4b5;
+// Clients component
+$clients-head-title-text:                 $palette-river-bed;
+$clients-head-subtitle-text:              $palette-bali-hai;
+$clients-head-button-favorite-border:     $palette-geyser;
+$clients-head-button-favorite-background: $palette-white;
+$clients-head-button-favorite-text:       $palette-river-bed;
+$clients-head-button-add-background:      $palette-royal-blue;
 
-$table-title: #475364;
-$table-background: #ffffff;
+// table component
+$table-head-text:                         $palette-river-bed;
+$table-head-background:                   $palette-white;
+$table-row-main-text:                     $palette-river-bed;
+$table-row-second-text:                   $palette-gray-chateau;
+$table-row-small-text:                    $palette-bali-hai;
+$table-row-background:                    $palette-white;
+$table-row-button-border:                 $palette-geyser;
+$table-row-bold:                          $palette-river-bed;
+$table-row-icon-background:               $palette-mystic;
 
-$table-background-icon: #e8eff1;
-$table-button-border: #dbe4e7;
+// AddForm component
+$add-form-shadow-background:              $palette-black;
+$add-form-background:                     $palette-white;
+$add-form-button-close-background:        $palette-white;
+$add-form-title-text:                     $palette-river-bed;
+$add-form-section-bottom-line:            $palette-black-squeeze;
+$add-form-button-add-text:                $palette-white;
+$add-form-button-add-background:          $palette-royal-blue;
+$add-form-button-cancel-text:             $palette-river-bed;
+$add-form-button-cancel-background:       $palette-white;
+$add-form-button-cansel-border:           $palette-mystic;
 
-$table-none: #a3a9b1;
+// Field component
+$field-title-text:                        $palette-river-bed;
+$field-small-text:                        $palette-bali-hai;
+$field-input-text:                        $palette-river-bed;
+$field-input-placeholder:                 $palette-bali-hai;
+$field-input-border:                      $palette-mystic;
+$field-input-background:                  $palette-black-squeeze;
 
-$add-form-line: #f4f9fb;
+// FieldFile component
+$field-file-button-text:                  $palette-white;
+$field-file-button-background:            $palette-royal-blue;

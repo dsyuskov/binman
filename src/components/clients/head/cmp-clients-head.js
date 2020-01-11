@@ -3,12 +3,12 @@ import './clients-head.scss';
 
 export default function ClientsHead(props) {
   return (
-    <div className="clients__head">
-      <div className="clients__title">
-        <h2>Ваши соискатели</h2>
-        <h4>Всего соискателей: {props.allClients}</h4>
+    <div className="clients-head">
+      <div className="clients-head__title-container">
+        <h2 className="clients-head__title">Ваши соискатели</h2>
+        <p className="clients-head__subtitle">Всего соискателей: {props.allClients}</p>
       </div>
-      <div className="clients__buttons">
+      <div className="clients-head__buttons-container">
         <button 
           className="button button--favorite"
           onClick={props.onFavoriteButtonClick}

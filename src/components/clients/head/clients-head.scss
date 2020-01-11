@@ -1,0 +1,56 @@
+@import 'constants/colors.scss';
+@import 'constants/variables.scss';
+
+.clients {
+  font-family: $font-family;
+
+  &-head {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+      color: $clients-head-title-text;
+      font-size: 2.2rem;
+      font-weight: 700;
+      line-height: 2.6rem;
+    }
+
+    &__subtitle {
+      color: $clients-head-subtitle-text;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.8rem;
+    }
+  }
+}
+
+.button {
+  box-sizing: border-box;
+  height: 3.6rem;
+  padding-right: 1.6rem;
+  padding-left: 3.3rem;
+  border: none;
+  border-radius: $border-radius;
+  color: $add-form-button-add-text;
+  font-family: $font-family;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.1rem;
+  text-transform: uppercase;
+  background-repeat: no-repeat;
+  background-position: 1.5rem center;
+  cursor: pointer;
+
+  &--add-client {
+    margin-left: 1rem;
+    background-image: url('./icon-add.svg');
+    background-color: $clients-head-button-add-background;
+  }
+
+  &--favorite {
+    background-image: url('./icon-favorites.svg');
+    background-color: $clients-head-button-favorite-background;
+    border: 1px solid $clients-head-button-favorite-border;
+    color: $clients-head-button-favorite-text;
+  }
+}

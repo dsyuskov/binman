@@ -1,0 +1,96 @@
+@import 'constants/colors.scss';
+@import 'constants/variables.scss';
+
+.add-form {
+  width: 100%;
+  &__shadow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: $add-form-shadow-background;
+    opacity: 0.6;
+  }
+
+  &__close {
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    top: 1.6rem;
+    left: -4.6rem;
+    border: none;
+    border-radius: $border-radius;
+    background: url("./close.svg") center center no-repeat;
+    background-color: $add-form-button-close-background;
+    cursor: pointer;
+  }
+}
+
+.form {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65rem;
+  font-family: $font-family;
+  background-color: $add-form-background;
+
+  &__title-form {
+    color: $add-form-title-text;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    margin: 2.1rem 0;
+    text-transform: uppercase;
+  }
+
+  &__title-section {
+    color: $add-form-title-text;;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    margin-bottom: 1.6rem;
+  }
+
+  &__section {
+    padding: 0 2.5rem;
+    border-bottom: 1px solid $add-form-section-bottom-line;
+  }
+
+  &__button {
+    box-sizing: border-box;
+    width: 49%;
+    height: 3.6rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    line-height: 1.3rem;
+    text-transform: uppercase;
+    border-radius: $border-radius;
+    cursor: pointer;
+
+    &--add {
+      color: $add-form-button-add-text;
+      background-color: $add-form-button-add-background;
+      border: none;
+    }
+
+    &--cancel {
+      color: $add-form-button-cancel-text;
+      border: 1px solid $add-form-button-cansel-border;
+      background-color: $add-form-button-cancel-background;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+      margin: 1.3rem 0;
+    }
+  }
+
+  &__rating-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

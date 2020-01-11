@@ -1,0 +1,113 @@
+@import 'constants/colors.scss';
+@import 'constants/variables.scss';
+
+.table-row {
+  display: grid;
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  grid-template-columns: 25fr 19fr 31fr 13fr 10fr;
+  margin-bottom: 0.2rem;
+  padding: 1.4rem 2rem;
+  font-family: $font-family;
+  border-radius: $border-radius;
+  background-color: $table-row-background;
+  color: $table-row-main-text;
+  
+  &__column {
+    display: flex;
+    align-items: center;
+  }
+
+  &__avatar {
+    margin-right: 1.1rem;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__icon {
+    display: flex;
+    justify-content: space-around;
+    width: 3.6rem;
+    height: 3.6rem;
+    background-color: $table-row-icon-background;
+    border-radius: $border-radius;
+    margin-right: 1.1rem;
+  }
+
+  &__data {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  &__subdata {
+    color: $table-row-small-text;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__show {
+    color: $table-row-small-text;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  &__none {
+    color: $table-row-second-text;
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+  }
+
+  &__rating {
+    text-align: center;
+    color: $table-row-small-text;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.2rem;
+  }
+
+  &__buttons {
+    display: flex;
+  }
+
+  &__button {
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-left: 0.5rem;
+    border-radius: $border-radius;
+    border: 1px solid $table-row-button-border;
+    cursor: pointer;
+
+    &--resume {
+      background: url('./icon-resume.svg') no-repeat center center;
+    }
+
+    &--archive {
+      background: url('./icon-archive.svg') no-repeat center center;
+    }
+
+    &--favorite {
+      background: url('./icon-favorite.svg') no-repeat center center;
+    }
+  }
+
+  &__bold {
+    color: $table-row-bold;
+    font-weight: 700;
+  }
+}

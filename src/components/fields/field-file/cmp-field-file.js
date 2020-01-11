@@ -17,9 +17,9 @@ export default class FieldFile extends React.Component {
   render() {
     const { title, comment } = this.props;
     return(
-      <div className="field-file">
-        <label className="field-file__title">{title}</label>
-        <h6 className="field-file__comment">{comment}</h6>
+      <div className=" field field-file">
+        <label className="field__title">{title}</label>
+        <p className="field__comment">{comment}</p>
         <div className="field-file__container">
           <label 
             className="field-file__button"
@@ -32,7 +32,7 @@ export default class FieldFile extends React.Component {
             />
           </label>
           <input
-            className="field-file__input"
+            className="field__input field-file__input"
             type="text"
             value={this.state.file}
             readOnly

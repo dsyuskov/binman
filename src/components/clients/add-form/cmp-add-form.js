@@ -1,10 +1,10 @@
 import React from 'react';
-import { Field, reduxForm } from 'redux-form';
+import { reduxForm } from 'redux-form';
 import './add-form.scss';
 
-import FieldRaiting from '../../components/field-rating/cmp-field-rating';
-import FieldFile from '../../components/field-file/cmp-field-file';
-import FieldInput from '../../components/field-input/cmp-field-input';
+import FieldRaiting from 'components/fields/field-rating/cmp-field-rating';
+import FieldFile from 'components/fields/field-file/cmp-field-file';
+import FieldInput from 'components/fields/field-input/cmp-field-input';
 
 class AddForm extends React.Component {
   render() {
@@ -73,17 +73,17 @@ class AddForm extends React.Component {
 
           <div className="form__section">
             <div className="form__title-section">Оценка соискателя</div>
-              <div className="field__rating-container">
-                <FieldRaiting 
-                  title="Оценка резюме"
-                />
-                <FieldRaiting 
-                  title="Оценка тестового задания"
-                />
-                <FieldRaiting
-                  title="Оценка собеседования"
-                />
-              </div>
+            <div className="form__rating-container">
+              <FieldRaiting 
+                title="Оценка резюме"
+              />
+              <FieldRaiting 
+                title="Оценка тестового задания"
+              />
+              <FieldRaiting
+                title="Оценка собеседования"
+              />
+            </div>
             </div>
 
           <div className="form__section">
@@ -92,7 +92,7 @@ class AddForm extends React.Component {
                 className="form__button form__button--cancel"
                 onClick={this.props.onCancelButtonClick}
               >Отменить</button>
-              <button className="form__button form__button--add" type="submit">Добаить соискателя</button>
+              <button className="form__button form__button--add" type="submit">Добавить соискателя</button>
             </div>
           </div>
         </form>

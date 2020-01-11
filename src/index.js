@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import Page from './components/page/cmp-page';
 import { Provider } from 'react-redux';
 import store from './store/store';
+import './index.scss';
 
 import * as serviceWorker from './serviceWorker';
 

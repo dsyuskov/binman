@@ -1,10 +1,10 @@
 const data = [{
     id: '123456',
-    name: 'Биман Иван Натанович',
+    name: 'Бинман Иван Натанович',
     vacansy: 'Full-stack разработчик',
     avatar: '123456.png',
     phone: ['+7 (900) 800-70-60', '+7 (900) 800-70-60'],
-    email: ['ioan@biman.ru'],
+    email: ['ioan@binman.ru', 'ioan@binman.ru'],
     resume: 'url',
     archive: 'url',
     raitingResume: 5,

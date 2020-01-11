@@ -1,0 +1,33 @@
+@import '../field.scss';
+
+.field-file {
+
+  &__input {
+    padding-left: 12rem !important;
+  }
+
+  &__button {
+    position: absolute;
+    box-sizing: border-box;
+    top: 1.2rem;
+    left: 0.5rem;
+    height: 2.6rem;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1rem;
+    text-transform: uppercase;
+    color: $field-file-button-text;
+    border-radius: $border-radius;
+    background-color: $field-file-button-background;
+    cursor: pointer;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__control {
+    display: none;
+  }
+}

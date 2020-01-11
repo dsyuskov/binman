@@ -1,11 +1,12 @@
-@import '../../constants/colors.scss';
+@import 'constants/colors.scss';
+@import 'constants/variables.scss';
 
 .header {
   position: fixed;;
-  height: 4.1rem;
+  height: $header-height;
   display: flex;
   align-items: center;
-  padding-left: 1.7rem;
+  padding-left: 2.7rem;
   background: $header-background;
   width: 100%;
   z-index: 2;

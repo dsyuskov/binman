@@ -1,16 +1,16 @@
 import React from 'react';
 import './clients.scss';
-import data from '../../data/data';
+import data from 'data/data';
 
-import ClientHead from '../clients-head/cmp-clients-head';
-import ClientsTable from '../clients-table/cmp-clients-table';
-import AddForm from '../add-form/cmp-add-form';
+import ClientHead from './head/cmp-clients-head';
+import ClientsTable from './table/cmp-clients-table';
+import AddForm from './add-form/cmp-add-form';
 
 export default class Clients extends React.Component {
   constructor() {
     super();
     this.state = {
-      data: '',
+      data: data,
     }
   }
 
@@ -27,7 +27,7 @@ export default class Clients extends React.Component {
   }
 
   componentDidMount() {
-    this.setState({data: data});
+
   }
 
   handleSubmit = (values) => {
@@ -37,13 +37,16 @@ export default class Clients extends React.Component {
 
   render() {
     const { isShowAddForm } = this.props;
+    const { data } = this.state;
     return (
       <section className="clients">
         <ClientHead 
           allClients={data.length}
           onOpenAddFormButtonClick={this.handleOpenAddFormButtonClick}
         />
-        <ClientsTable />
+        <ClientsTable 
+          data={ data }
+        />
         {isShowAddForm &&
           <AddForm
             onCancelButtonClick={this.handleCancelButtonClick}

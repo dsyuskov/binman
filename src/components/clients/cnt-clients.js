@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import Clients from './cmp-clients';
-import { showAddForm } from '../../actions/addForm';
+import { showAddForm } from 'actions/addForm';
 
 const mapStateToProps = (state) => {
   const { isShowAddForm } = state.addForm;
