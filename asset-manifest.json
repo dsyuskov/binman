@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/binman/static/css/main.e881e85a.chunk.css",
-    "main.js": "/binman/static/js/main.2c525384.chunk.js",
-    "main.js.map": "/binman/static/js/main.2c525384.chunk.js.map",
+    "main.js": "/binman/static/js/main.ab87cf72.chunk.js",
+    "main.js.map": "/binman/static/js/main.ab87cf72.chunk.js.map",
     "runtime-main.js": "/binman/static/js/runtime-main.bf1964a5.js",
     "runtime-main.js.map": "/binman/static/js/runtime-main.bf1964a5.js.map",
     "static/js/2.7d462535.chunk.js": "/binman/static/js/2.7d462535.chunk.js",
     "static/js/2.7d462535.chunk.js.map": "/binman/static/js/2.7d462535.chunk.js.map",
     "index.html": "/binman/index.html",
-    "precache-manifest.95aba7739f0216b7c01129ebfc389233.js": "/binman/precache-manifest.95aba7739f0216b7c01129ebfc389233.js",
+    "precache-manifest.a326e3d8808f4f216c793fc90d0279ff.js": "/binman/precache-manifest.a326e3d8808f4f216c793fc90d0279ff.js",
     "service-worker.js": "/binman/service-worker.js",
     "static/css/main.e881e85a.chunk.css.map": "/binman/static/css/main.e881e85a.chunk.css.map",
     "static/js/2.7d462535.chunk.js.LICENSE": "/binman/static/js/2.7d462535.chunk.js.LICENSE",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.bf1964a5.js",
     "static/js/2.7d462535.chunk.js",
     "static/css/main.e881e85a.chunk.css",
-    "static/js/main.2c525384.chunk.js"
+    "static/js/main.ab87cf72.chunk.js"
   ]
 }

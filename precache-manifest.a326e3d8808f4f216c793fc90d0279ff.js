@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8f240cc9c18b08c0dcc25d975a095c9",
+    "revision": "aadbeb8b1240f95849ed236ce9062b8a",
     "url": "/binman/index.html"
   },
   {
-    "revision": "2e5eb86182076c58f244",
+    "revision": "0a8226a897e69e7dc3b7",
     "url": "/binman/static/css/main.e881e85a.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/binman/static/js/2.7d462535.chunk.js.LICENSE"
   },
   {
-    "revision": "2e5eb86182076c58f244",
-    "url": "/binman/static/js/main.2c525384.chunk.js"
+    "revision": "0a8226a897e69e7dc3b7",
+    "url": "/binman/static/js/main.ab87cf72.chunk.js"
   },
   {
     "revision": "e77a0c59ac9c3a72abe3",
