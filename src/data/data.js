@@ -1,5 +1,12 @@
-const data = [{
-    id: '123456',
+export const vacansyList = [
+  {id: 1, value: 'Full-stack разработчик'},
+  {id: 2, value: 'Web-дизайнер'},
+  {id: 3, value: 'Front-end разработчик'},
+  {id: 4, value: 'Back-end разработчик'},
+]
+
+export const clientList = [{
+    id: 'f16f9560fb0b',
     name: 'Бинман Иван Натанович',
     vacansy: 'Full-stack разработчик',
     avatar: '123456.png',
@@ -9,10 +16,10 @@ const data = [{
     archive: 'url',
     raitingResume: 5,
     raitingTets: 5,
-    raitingШnterview: 5,
+    raitingInterview: 5,
     favorite: null,
   }, {
-    id: '123457',
+    id: 'f16f9060fb0b',
     name: 'Дурков Павел Валерьевич',
     vacansy: 'Full-stack разработчик',
     avatar: '123457.png',
@@ -20,12 +27,12 @@ const data = [{
     email: ['durkov@vkontakte.ru'],
     resume: 'url',
     archive: 'url',
-    raitingResume: 5,
+    raitingResume: 1,
     raitingTets: 1,
-    raitingШnterview: 1,
+    raitingInterview: 1,
     favorite: null,
   }, {
-    id: '123458',
+    id: 'f16f9060fb0a',
     name: 'Лебедин Артеймий Андреевич',
     vacansy: 'Web-дизайнер',
     avatar: '123458.png',
@@ -35,10 +42,10 @@ const data = [{
     archive: 'url',
     raitingResume: 5,
     raitingTets: 3,
-    raitingШnterview: 3,
+    raitingInterview: 3,
     favorite: null,
   }, {
-    id: '123459',
+    id: 'f16f9060fb0f',
     name: 'Чулков Олег',
     vacansy: 'Web-дизайнер',
     avatar: null,
@@ -46,10 +53,21 @@ const data = [{
     email: [],
     resume: 'url',
     archive: 'url',
+    raitingResume: 3,
+    raitingTets: 1,
+    raitingInterview: 2,
+    favorite: null,
+  }, {
+    id: 'f16f9060ab0f',
+    name: 'Федора Линукс Линуксович',
+    vacansy: 'Front-end разработчик',
+    avatar: null,
+    phone: ['+7 (800) 200-06-60'],
+    email: ['ioan@minman.ru', 'ioan@minman.com'],
+    resume: 'url',
+    archive: 'url',
     raitingResume: 5,
-    raitingTets: 3,
-    raitingШnterview: 3,
+    raitingTets: 5,
+    raitingInterview: 5,
     favorite: null,
   } ];
-
-export default data;

@@ -17,6 +17,9 @@ export default function ClientsTable(props) {
         <div>Оценка соискателя</div>
       </div>
       {clients}
+      <div className="table__show-more">
+        Показать еще
+      </div>
     </div>
   )
 }
