@@ -15,59 +15,60 @@ $palette-mystic:             #dce5ea;
 $palette-chartreuse-yellow:  #dae700;
 
 // Header component
-$header-background:                       $palette-ebony-clay;
+$header-background:                           $palette-ebony-clay;
 
 // Sidebar component
-$sidebar-background:                      $palette-bright-gray;
-$sidebar-shadow:                          $palette-mine-shaft;
-$menu-item-selected:                      $palette-charade;
-$menu-item-hover:                         $palette-charade;
+$sidebar-background:                          $palette-bright-gray;
+$sidebar-shadow:                              $palette-mine-shaft;
+$menu-item-selected:                          $palette-charade;
+$menu-item-hover:                             $palette-charade;
 
 // Main component
-$main-background:                         $palette-black-squeeze;
+$main-background:                             $palette-black-squeeze;
 
 // Clients component
-$clients-head-title-text:                 $palette-river-bed;
-$clients-head-subtitle-text:              $palette-bali-hai;
-$clients-head-button-favorite-border:     $palette-geyser;
-$clients-head-button-favorite-background: $palette-white;
-$clients-head-button-favorite-text:       $palette-river-bed;
-$clients-head-button-add-background:      $palette-royal-blue;
+$clients-head-title-text:                     $palette-river-bed;
+$clients-head-subtitle-text:                  $palette-bali-hai;
+$clients-head-button-favorite-border:         $palette-geyser;
+$clients-head-button-no-favorite-background:  $palette-white;
+$clients-head-button-favorite-background:     $palette-chartreuse-yellow;
+$clients-head-button-favorite-text:           $palette-river-bed;
+$clients-head-button-add-background:          $palette-royal-blue;
 
 // table component
-$table-head-text:                         $palette-river-bed;
-$table-head-background:                   $palette-white;
-$table-row-main-text:                     $palette-river-bed;
-$table-row-second-text:                   $palette-gray-chateau;
-$table-row-small-text:                    $palette-bali-hai;
-$table-row-background:                    $palette-white;
-$table-row-button-border:                 $palette-geyser;
-$table-row-bold:                          $palette-river-bed;
-$table-row-icon-background:               $palette-mystic;
-$table-row-button-favorite-background:    $palette-chartreuse-yellow;
-$table-show-more-text:                    $palette-river-bed;
-$table-show-more-background:              $palette-white;
+$table-head-text:                             $palette-river-bed;
+$table-head-background:                       $palette-white;
+$table-row-main-text:                         $palette-river-bed;
+$table-row-second-text:                       $palette-gray-chateau;
+$table-row-small-text:                        $palette-bali-hai;
+$table-row-background:                        $palette-white;
+$table-row-button-border:                     $palette-geyser;
+$table-row-bold:                              $palette-river-bed;
+$table-row-icon-background:                   $palette-mystic;
+$table-row-button-favorite-background:        $palette-chartreuse-yellow;
+$table-show-more-text:                        $palette-river-bed;
+$table-show-more-background:                  $palette-white;
 
 // AddForm component
-$add-form-shadow-background:              $palette-black;
-$add-form-background:                     $palette-white;
-$add-form-button-close-background:        $palette-white;
-$add-form-title-text:                     $palette-river-bed;
-$add-form-section-bottom-line:            $palette-black-squeeze;
-$add-form-button-add-text:                $palette-white;
-$add-form-button-add-background:          $palette-royal-blue;
-$add-form-button-cancel-text:             $palette-river-bed;
-$add-form-button-cancel-background:       $palette-white;
-$add-form-button-cansel-border:           $palette-mystic;
+$add-form-shadow-background:                  $palette-black;
+$add-form-background:                         $palette-white;
+$add-form-button-close-background:            $palette-white;
+$add-form-title-text:                         $palette-river-bed;
+$add-form-section-bottom-line:                $palette-black-squeeze;
+$add-form-button-add-text:                    $palette-white;
+$add-form-button-add-background:              $palette-royal-blue;
+$add-form-button-cancel-text:                 $palette-river-bed;
+$add-form-button-cancel-background:           $palette-white;
+$add-form-button-cansel-border:               $palette-mystic;
 
 // Field component
-$field-title-text:                        $palette-river-bed;
-$field-small-text:                        $palette-bali-hai;
-$field-input-text:                        $palette-river-bed;
-$field-input-placeholder:                 $palette-bali-hai;
-$field-input-border:                      $palette-mystic;
-$field-input-background:                  $palette-black-squeeze;
+$field-title-text:                            $palette-river-bed;
+$field-small-text:                            $palette-bali-hai;
+$field-input-text:                            $palette-river-bed;
+$field-input-placeholder:                     $palette-bali-hai;
+$field-input-border:                          $palette-mystic;
+$field-input-background:                      $palette-black-squeeze;
 
 // FieldFile component
-$field-file-button-text:                  $palette-white;
-$field-file-button-background:            $palette-royal-blue;
+$field-file-button-text:                      $palette-white;
+$field-file-button-background:                $palette-royal-blue;

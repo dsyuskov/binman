@@ -1,10 +1,19 @@
 import React from 'react';
 import './clients-table.scss';
 
-import TableRow from './row/cmp-table-row';
+import TableRow from './row/cnt-table-row';
 
 export default function ClientsTable(props) {
-  const clients = props.data.map((client) => {
+
+  const clients = props.data.filter(item => {
+    if (props.isShowFavoritesClients) {
+      return item.favorite === props.isShowFavoritesClients
+    } else {
+      return true;
+    }
+  });
+
+  const showClients = clients.map((client) => {
     return <TableRow key={client.id} client={client}/>
   });
 
@@ -16,7 +25,7 @@ export default function ClientsTable(props) {
         <div>E-Mail</div>
         <div>Оценка соискателя</div>
       </div>
-      {clients}
+      {showClients}
       <div className="table__show-more">
         Показать еще
       </div>

@@ -53,4 +53,11 @@
     border: 1px solid $clients-head-button-favorite-border;
     color: $clients-head-button-favorite-text;
   }
+  
+  &--no-favorite {
+    background-image: url('./icon-favorites.svg');
+    background-color: $clients-head-button-no-favorite-background;
+    border: 1px solid $clients-head-button-favorite-border;
+    color: $clients-head-button-favorite-text;
+  }
 }

@@ -95,6 +95,7 @@ export default class TableRow extends React.Component {
             <button className="table-row__button table-row__button--archive"/>
             <button 
               className={`table-row__button ${ favorite ? 'table-row__button--favorite' : 'table-row__button--no-favorite' }`}
+              onClick={() => this.props.addClientToFavorite(this.props.client)}
             />
           </div>
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './clients-head.scss';
 
 export default function ClientsHead(props) {
+  const {isShowFavoritesClients} = props;
   return (
     <div className="clients-head">
       <div className="clients-head__title-container">
@@ -10,7 +11,7 @@ export default function ClientsHead(props) {
       </div>
       <div className="clients-head__buttons-container">
         <button 
-          className="button button--favorite"
+          className={`button ${isShowFavoritesClients ? 'button--favorite' : 'button--no-favorite'}`}
           onClick={props.onFavoriteButtonClick}
         >Избранные</button>
         <button

@@ -10,14 +10,14 @@ export const clientList = [{
     name: 'Бинман Иван Натанович',
     vacansy: 'Full-stack разработчик',
     avatar: '123456.png',
-    phone: ['+7 (900) 800-70-60', '+7 (900) 800-70-60'],
-    email: ['ioan@binman.ru', 'ioan@binman.ru'],
+    phone: ['+7 (900) 800-70-60', '+7 (900) 800-70-61', '+7 (900) 800-70-62', '+7 (900) 800-70-63'],
+    email: ['ioan@binman.ru', 'ioan@binman.com'],
     resume: 'url',
     archive: 'url',
     raitingResume: 5,
     raitingTets: 5,
     raitingInterview: 5,
-    favorite: null,
+    favorite: true,
   }, {
     id: 'f16f9060fb0b',
     name: 'Дурков Павел Валерьевич',
@@ -30,7 +30,7 @@ export const clientList = [{
     raitingResume: 1,
     raitingTets: 1,
     raitingInterview: 1,
-    favorite: null,
+    favorite: false,
   }, {
     id: 'f16f9060fb0a',
     name: 'Лебедин Артеймий Андреевич',
@@ -43,7 +43,7 @@ export const clientList = [{
     raitingResume: 5,
     raitingTets: 3,
     raitingInterview: 3,
-    favorite: null,
+    favorite: true,
   }, {
     id: 'f16f9060fb0f',
     name: 'Чулков Олег',
@@ -56,7 +56,7 @@ export const clientList = [{
     raitingResume: 3,
     raitingTets: 1,
     raitingInterview: 2,
-    favorite: null,
+    favorite: false,
   }, {
     id: 'f16f9060ab0f',
     name: 'Федора Линукс Линуксович',
@@ -69,5 +69,5 @@ export const clientList = [{
     raitingResume: 5,
     raitingTets: 5,
     raitingInterview: 5,
-    favorite: null,
+    favorite: false,
   } ];
