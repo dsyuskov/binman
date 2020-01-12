@@ -5,9 +5,12 @@ import './add-form.scss';
 import FieldRaiting from 'components/fields/field-rating/cmp-field-rating';
 import FieldFile from 'components/fields/field-file/cmp-field-file';
 import FieldInput from 'components/fields/field-input/cmp-field-input';
+import FieldDropDown from 'components/fields/field-dropdown/cmp-field-dropdown';
 
 class AddForm extends React.Component {
   render() {
+    const { vacansyList } = this.props;
+    console.log(this.props);
     return (
       <div className="add-form">
         <div className="add-form__shadow">
@@ -27,35 +30,43 @@ class AddForm extends React.Component {
           <div className="form__section">
             <div className="form__title-section">Основные данные</div>
 
-            <FieldInput 
+            <FieldInput
               title="ФИО"
               placeholder="Введите ФИО"
               name="name"
+              type="text"
+              required="required"
             />
-            <FieldInput 
+            <FieldDropDown
               title="Вакансия"
-              placeholder="Выберите вакансию"
               name="vacansy"
+              required="required"
+              placeholder="Выберите вакансию"
+              list={vacansyList}
             />
             <FieldFile
               title="Фотография"
               comment="Размер вложения файла не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов jpg, png"
+              name="photo"
+              accept=".jpg,.png"
             />
           </div>
 
           <div className="form__section">
             <div className="form__title-section">Контактные данные</div>
-            <FieldInput 
+            <FieldInput
               title="Номер телефона"
               placeholder="Введите номер телефона"
               add="Добавить еще один номер телефона"
               name="phone"
+              type="tel"
             />
             <FieldInput
               title="E-Mail"
               placeholder="Введите e-mail"
               add="Добавить еще один e-mail"
               name="email"
+              type="email"
             />
           </div>
 
@@ -64,10 +75,14 @@ class AddForm extends React.Component {
             <FieldFile
               title="Резюме"
               comment="Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов doc, pdf"
+              name="resume"
+              accept=".doc,.pdf"
             />
             <FieldFile
               title="Архив с результатами тестового задания"
               comment="Размер вложения файла не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов zip, rar"
+              name="test"
+              accept=".zip,.rar"
             />
           </div>
 
@@ -76,12 +91,21 @@ class AddForm extends React.Component {
             <div className="form__rating-container">
               <FieldRaiting 
                 title="Оценка резюме"
+                name="resume"
+                required="required"
+                onChange={(val)=> this.props.change('raitingResume',val)}
               />
-              <FieldRaiting 
+              <FieldRaiting
                 title="Оценка тестового задания"
+                name="test"
+                required="required"
+                onChange={(val)=> this.props.change('raitingTets',val)}
               />
               <FieldRaiting
                 title="Оценка собеседования"
+                name="interview"
+                required="required"
+                onChange={(val)=> this.props.change('raitingInterview',val)}
               />
             </div>
             </div>
@@ -92,7 +116,10 @@ class AddForm extends React.Component {
                 className="form__button form__button--cancel"
                 onClick={this.props.onCancelButtonClick}
               >Отменить</button>
-              <button className="form__button form__button--add" type="submit">Добавить соискателя</button>
+              <button 
+                className="form__button form__button--add"
+                type="submit"
+              >Добавить соискателя</button>
             </div>
           </div>
         </form>
@@ -102,7 +129,7 @@ class AddForm extends React.Component {
 }
 
 AddForm = reduxForm({
-  form: 'addForm'
+  form: 'addForm',
 })(AddForm)
 
 export default AddForm;

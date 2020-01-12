@@ -1,0 +1,29 @@
+.page {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8rem 1fr;
+      grid-template-columns: 8rem 1fr;
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+      grid-template-areas: "header header" "sidebar main";
+}
+
+.header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+.sidebar {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+}
+
+.main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: main;
+}
+/*# sourceMappingURL=page.css.map */

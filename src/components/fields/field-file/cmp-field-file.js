@@ -1,5 +1,26 @@
 import React from 'react';
+import { Field } from 'redux-form';
+
 import './field-file.scss';
+
+
+const adaptFileEventToValue = delegate => e => delegate(e.target.files[0]);
+
+const FileInput = ({ 
+  input: { value: omitValue, onChange, onBlur, ...inputProps }, 
+  meta: omitMeta, 
+  ...props 
+  }) => {
+    return (
+      <input
+        onChange={adaptFileEventToValue(onChange)}
+        onBlur={adaptFileEventToValue(onBlur)}
+        type="file"
+        {...props.input}
+        {...props}
+      />
+    );
+};
 
 export default class FieldFile extends React.Component {
   constructor() {
@@ -10,12 +31,12 @@ export default class FieldFile extends React.Component {
     }
   }
 
-  handleChangeFile = () => {
-    this.setState({file: this.fileInput.current.files[0].name})
+  handleChangeFile = (file) => {
+    this.setState({file: file.name})
   }
 
   render() {
-    const { title, comment } = this.props;
+    const { title, comment, name, accept } = this.props;
     return(
       <div className=" field field-file">
         <label className="field__title">{title}</label>
@@ -24,11 +45,15 @@ export default class FieldFile extends React.Component {
           <label 
             className="field-file__button"
           >Выберите файл
-            <input 
+            <Field
               className="field-file__control"
               type="file"
+              component={FileInput}
+              name={name}
+              //value={null}
               ref={this.fileInput}
-              onChange={this.handleChangeFile}
+              accept={accept}
+              onChange={(file) => this.handleChangeFile(file)}
             />
           </label>
           <input

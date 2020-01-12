@@ -21,6 +21,7 @@ export default class FieldRating extends React.Component {
 
   handleStarMouseClick = (rating) => {
     this.setState({rating: rating});
+    this.props.onChange(rating);
   }
 
   render() {
