@@ -101,8 +101,13 @@
       background: url('./icon-archive.svg') no-repeat center center;
     }
 
+    &--no-favorite {
+      background: url('./icon-favorite.svg') no-repeat center center;
+    }
+
     &--favorite {
       background: url('./icon-favorite.svg') no-repeat center center;
+      background-color: $table-row-button-favorite-background;
     }
   }
 

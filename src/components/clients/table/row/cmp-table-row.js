@@ -34,7 +34,7 @@ export default class TableRow extends React.Component {
   }
 
   render(){
-    const { avatar, name, vacansy, phone, email, raitingResume, raitingTets, raitingInterview } = this.props.client;
+    const { avatar, name, vacansy, phone, email, raitingResume, raitingTets, raitingInterview, favorite } = this.props.client;
     const rating = Math.round((raitingResume + raitingTets + raitingInterview)/3);
     const { showPhone, showEmail } = this.state;
     return (
@@ -70,7 +70,6 @@ export default class TableRow extends React.Component {
             {showEmail.length === 0 && <img src={require("./icon-no-mail.svg")} alt="e-mail"/>}
           </div>
           <div className="table-row__wrapper">
-            {/* {email.length >= 1 && <div className="table-row__data">{email[0]}</div>} */}
             {showEmail.map((email) => { return <div key ={email} className="table-row__data">{email}</div>})}
             {email.length > showEmail.length &&
               <button
@@ -94,7 +93,9 @@ export default class TableRow extends React.Component {
           <div className="table-row__buttons">
             <button className="table-row__button table-row__button--resume"/>
             <button className="table-row__button table-row__button--archive"/>
-            <button className="table-row__button table-row__button--favorite"/>
+            <button 
+              className={`table-row__button ${ favorite ? 'table-row__button--favorite' : 'table-row__button--no-favorite' }`}
+            />
           </div>
         </div>
       </div>
