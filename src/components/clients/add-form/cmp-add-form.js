@@ -10,7 +10,7 @@ import FieldDropDown from 'components/fields/field-dropdown/cmp-field-dropdown';
 class AddForm extends React.Component {
   render() {
     const { vacansyList } = this.props;
-    console.log(this.props);
+
     return (
       <div className="add-form">
         <div className="add-form__shadow">
@@ -93,19 +93,16 @@ class AddForm extends React.Component {
                 title="Оценка резюме"
                 name="raitingResume"
                 required="required"
-                //onChange={(val)=> this.props.change('raitingResume',val)}
               />
               <FieldRaiting
                 title="Оценка тестового задания"
                 name="raitingTets"
                 required="required"
-                //onChange={(val)=> this.props.change('raitingTets',val)}
               />
               <FieldRaiting
                 title="Оценка собеседования"
                 name="raitingInterview"
                 required="required"
-                //onChange={(val)=> this.props.change('raitingInterview',val)}
               />
             </div>
             </div>

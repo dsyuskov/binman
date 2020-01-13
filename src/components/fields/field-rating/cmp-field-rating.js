@@ -1,6 +1,6 @@
 import React from 'react';
 import { Field } from 'redux-form';
-import Star from './cmp-star';
+import Star from 'components/commons/cmp-star';
 
 import './field-rating.scss';
 

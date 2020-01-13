@@ -1,4 +1,6 @@
 import React from 'react';
+import StarRating from 'components/commons/cmp-star-rating';
+
 import './table-row.scss';
 
 export default class TableRow extends React.Component {
@@ -81,11 +83,10 @@ export default class TableRow extends React.Component {
         </div>
         <div className="table-row__column">
           <div className="table-row__rating">
-            {rating === 1 && <img src={require("./icon-rating-1.svg")} alt="rating"/>}
-            {rating === 2 && <img src={require("./icon-rating-2.svg")} alt="rating"/>}
-            {rating === 3 && <img src={require("./icon-rating-3.svg")} alt="rating"/>}
-            {rating === 4 && <img src={require("./icon-rating-4.svg")} alt="rating"/>}
-            {rating === 5 && <img src={require("./icon-rating-5.svg")} alt="rating"/>}
+            <StarRating
+              className="table-row__rating-item"
+              rating={rating}
+            />
             <div className="table-row__subdata">Средний балл: <span className="table-row__bold">{rating}</span></div>
           </div>
         </div>
