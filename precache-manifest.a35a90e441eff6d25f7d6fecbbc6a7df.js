@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3badc293d530657002edda914acb78ed",
+    "revision": "500ceae0aad9a4547e59d142a9b247df",
     "url": "/binman/index.html"
   },
   {
-    "revision": "52ce4d13fa9306c3ba15",
-    "url": "/binman/static/css/main.55a0405e.chunk.css"
+    "revision": "41954f8ef4daab4fc1c6",
+    "url": "/binman/static/css/main.c03ce5d7.chunk.css"
   },
   {
-    "revision": "6edaf0cd9bf1b3d2f7a6",
-    "url": "/binman/static/js/2.af160783.chunk.js"
+    "revision": "23348d0e1a3043d60bcf",
+    "url": "/binman/static/js/2.e424f14c.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/binman/static/js/2.af160783.chunk.js.LICENSE"
+    "url": "/binman/static/js/2.e424f14c.chunk.js.LICENSE"
   },
   {
-    "revision": "52ce4d13fa9306c3ba15",
-    "url": "/binman/static/js/main.1ec097c2.chunk.js"
+    "revision": "41954f8ef4daab4fc1c6",
+    "url": "/binman/static/js/main.7c50b70f.chunk.js"
   },
   {
     "revision": "e77a0c59ac9c3a72abe3",
@@ -242,46 +242,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "235b58825c28732fee44271209c9ea24",
     "url": "/binman/static/media/icon-resume.235b5882.svg"
-  },
-  {
-    "revision": "372b5717012bad99595360a51d301c8c",
-    "url": "/binman/static/media/rating-0.372b5717.svg"
-  },
-  {
-    "revision": "66bc56cfb08da2a9faf0e9cd357e0a2f",
-    "url": "/binman/static/media/rating-1-full.66bc56cf.svg"
-  },
-  {
-    "revision": "372b5717012bad99595360a51d301c8c",
-    "url": "/binman/static/media/rating-1.372b5717.svg"
-  },
-  {
-    "revision": "664636aba13a0f4f22ed001d6222466b",
-    "url": "/binman/static/media/rating-2-full.664636ab.svg"
-  },
-  {
-    "revision": "0ccf30fd31abb2ac4ccd56ef9717cc13",
-    "url": "/binman/static/media/rating-2.0ccf30fd.svg"
-  },
-  {
-    "revision": "53bf055a182d5aa71147366aaa768924",
-    "url": "/binman/static/media/rating-3-full.53bf055a.svg"
-  },
-  {
-    "revision": "b1888cf25908a46308bd90b0e1aa9991",
-    "url": "/binman/static/media/rating-3.b1888cf2.svg"
-  },
-  {
-    "revision": "9788bc138b02f87a6d5fa1021e203806",
-    "url": "/binman/static/media/rating-4-full.9788bc13.svg"
-  },
-  {
-    "revision": "0eefe2a3aa60e0e2c195e4f62bc0ae0b",
-    "url": "/binman/static/media/rating-4.0eefe2a3.svg"
-  },
-  {
-    "revision": "133b1f256ae29aab83e9d0124c8204bc",
-    "url": "/binman/static/media/rating-5-full.133b1f25.svg"
   },
   {
     "revision": "0ea08268e3079f8adc28679b33cbde9f",

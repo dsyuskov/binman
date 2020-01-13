@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/binman/static/css/main.55a0405e.chunk.css",
-    "main.js": "/binman/static/js/main.1ec097c2.chunk.js",
-    "main.js.map": "/binman/static/js/main.1ec097c2.chunk.js.map",
+    "main.css": "/binman/static/css/main.c03ce5d7.chunk.css",
+    "main.js": "/binman/static/js/main.7c50b70f.chunk.js",
+    "main.js.map": "/binman/static/js/main.7c50b70f.chunk.js.map",
     "runtime-main.js": "/binman/static/js/runtime-main.bf1964a5.js",
     "runtime-main.js.map": "/binman/static/js/runtime-main.bf1964a5.js.map",
-    "static/js/2.af160783.chunk.js": "/binman/static/js/2.af160783.chunk.js",
-    "static/js/2.af160783.chunk.js.map": "/binman/static/js/2.af160783.chunk.js.map",
+    "static/js/2.e424f14c.chunk.js": "/binman/static/js/2.e424f14c.chunk.js",
+    "static/js/2.e424f14c.chunk.js.map": "/binman/static/js/2.e424f14c.chunk.js.map",
     "index.html": "/binman/index.html",
-    "precache-manifest.468e12021896e66bc3bbb3cdb522b2ba.js": "/binman/precache-manifest.468e12021896e66bc3bbb3cdb522b2ba.js",
+    "precache-manifest.a35a90e441eff6d25f7d6fecbbc6a7df.js": "/binman/precache-manifest.a35a90e441eff6d25f7d6fecbbc6a7df.js",
     "service-worker.js": "/binman/service-worker.js",
-    "static/css/main.55a0405e.chunk.css.map": "/binman/static/css/main.55a0405e.chunk.css.map",
-    "static/js/2.af160783.chunk.js.LICENSE": "/binman/static/js/2.af160783.chunk.js.LICENSE",
+    "static/css/main.c03ce5d7.chunk.css.map": "/binman/static/css/main.c03ce5d7.chunk.css.map",
+    "static/js/2.e424f14c.chunk.js.LICENSE": "/binman/static/js/2.e424f14c.chunk.js.LICENSE",
     "static/media/index.scss": "/binman/static/media/Robotothinitalic.f31f3151.woff2",
     "static/media/clients.svg": "/binman/static/media/clients.f79493e1.svg",
     "static/media/add-form.scss": "/binman/static/media/close.275a84d0.svg",
@@ -29,22 +29,12 @@
     "static/media/icon-rating-3.svg": "/binman/static/media/icon-rating-3.88d8e166.svg",
     "static/media/icon-rating-4.svg": "/binman/static/media/icon-rating-4.b283b836.svg",
     "static/media/icon-rating-5.svg": "/binman/static/media/icon-rating-5.82e838df.svg",
-    "static/media/rating-0.svg": "/binman/static/media/rating-0.372b5717.svg",
-    "static/media/rating-1-full.svg": "/binman/static/media/rating-1-full.66bc56cf.svg",
-    "static/media/rating-1.svg": "/binman/static/media/rating-1.372b5717.svg",
-    "static/media/rating-2-full.svg": "/binman/static/media/rating-2-full.664636ab.svg",
-    "static/media/rating-2.svg": "/binman/static/media/rating-2.0ccf30fd.svg",
-    "static/media/rating-3-full.svg": "/binman/static/media/rating-3-full.53bf055a.svg",
-    "static/media/rating-3.svg": "/binman/static/media/rating-3.b1888cf2.svg",
-    "static/media/rating-4-full.svg": "/binman/static/media/rating-4-full.9788bc13.svg",
-    "static/media/rating-4.svg": "/binman/static/media/rating-4.0eefe2a3.svg",
-    "static/media/rating-5-full.svg": "/binman/static/media/rating-5-full.133b1f25.svg",
     "static/media/reports.svg": "/binman/static/media/reports.0ea08268.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bf1964a5.js",
-    "static/js/2.af160783.chunk.js",
-    "static/css/main.55a0405e.chunk.css",
-    "static/js/main.1ec097c2.chunk.js"
+    "static/js/2.e424f14c.chunk.js",
+    "static/css/main.c03ce5d7.chunk.css",
+    "static/js/main.7c50b70f.chunk.js"
   ]
 }
