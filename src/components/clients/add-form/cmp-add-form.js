@@ -1,11 +1,13 @@
 import React from 'react';
 import { reduxForm } from 'redux-form';
+
 import './add-form.scss';
 
 import FieldRaiting from 'components/fields/field-rating/cmp-field-rating';
 import FieldFile from 'components/fields/field-file/cmp-field-file';
 import FieldInput from 'components/fields/field-input/cmp-field-input';
 import FieldDropDown from 'components/fields/field-dropdown/cmp-field-dropdown';
+import normalizePhone from 'components/fields/field-input/normolize-phone';
 
 class AddForm extends React.Component {
   render() {
@@ -60,6 +62,7 @@ class AddForm extends React.Component {
               add="Добавить еще один номер телефона"
               name="phone"
               type="tel"
+              normalize={normalizePhone}
             />
             <FieldInput
               title="E-Mail"

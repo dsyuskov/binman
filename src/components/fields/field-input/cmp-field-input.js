@@ -18,7 +18,7 @@ export default class FieldInput extends React.Component {
   }
 
   render() {
-    const { title, placeholder, add, name, required, type } = this.props;
+    const { title, placeholder, add, name, required, type, normalize } = this.props;
     const { fields } = this.state;
     return (
       <div className="field field-input">
@@ -33,6 +33,7 @@ export default class FieldInput extends React.Component {
               type={type}
               required={required}
               placeholder={placeholder}
+              normalize={normalize}
             />)
         })}
         {add &&
