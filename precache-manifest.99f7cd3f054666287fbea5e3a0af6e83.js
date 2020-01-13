@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "500ceae0aad9a4547e59d142a9b247df",
+    "revision": "016d1d26ccd938cb1326e32d1dd25fa3",
     "url": "/binman/index.html"
   },
   {
-    "revision": "41954f8ef4daab4fc1c6",
-    "url": "/binman/static/css/main.c03ce5d7.chunk.css"
+    "revision": "cebe3e505bb42e23e71b",
+    "url": "/binman/static/css/main.2d737ba9.chunk.css"
   },
   {
-    "revision": "23348d0e1a3043d60bcf",
-    "url": "/binman/static/js/2.e424f14c.chunk.js"
+    "revision": "651a78e7dc83b6541dac",
+    "url": "/binman/static/js/2.1e7d4071.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/binman/static/js/2.e424f14c.chunk.js.LICENSE"
+    "url": "/binman/static/js/2.1e7d4071.chunk.js.LICENSE"
   },
   {
-    "revision": "41954f8ef4daab4fc1c6",
-    "url": "/binman/static/js/main.7c50b70f.chunk.js"
+    "revision": "cebe3e505bb42e23e71b",
+    "url": "/binman/static/js/main.34b07d8b.chunk.js"
   },
   {
     "revision": "e77a0c59ac9c3a72abe3",
@@ -218,26 +218,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "561699ecff9fe67252e0b84d3c8dfb4a",
     "url": "/binman/static/media/icon-phone.561699ec.svg"
-  },
-  {
-    "revision": "0b206695abfbacb16d56bcf61a7635bb",
-    "url": "/binman/static/media/icon-rating-1.0b206695.svg"
-  },
-  {
-    "revision": "98eb2edaeecfd65a2e2daa886f1109b6",
-    "url": "/binman/static/media/icon-rating-2.98eb2eda.svg"
-  },
-  {
-    "revision": "88d8e166fa451fe2635a1f5bfa3ea983",
-    "url": "/binman/static/media/icon-rating-3.88d8e166.svg"
-  },
-  {
-    "revision": "b283b836d1d360a08153c799993a001a",
-    "url": "/binman/static/media/icon-rating-4.b283b836.svg"
-  },
-  {
-    "revision": "82e838dfa7718b47ef80cd8c1d1866e1",
-    "url": "/binman/static/media/icon-rating-5.82e838df.svg"
   },
   {
     "revision": "235b58825c28732fee44271209c9ea24",
