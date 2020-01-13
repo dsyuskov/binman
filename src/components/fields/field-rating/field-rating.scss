@@ -2,6 +2,7 @@
 @import 'constants/variables.scss';
 
 .field-star {
+  position: relative;
   font-family: $font-family;
   margin-bottom: 1.35rem;
 
@@ -15,8 +16,23 @@
   }
 
   &__item {
-    margin-top: 0.3rem;
-    margin-right: 0.3rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
     cursor: pointer;
+
+    &--disabled {
+      cursor: default;
+    }
+  }
+
+
+  &__control {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 1px;
+    height: 1px;
   }
 }

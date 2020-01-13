@@ -31,9 +31,10 @@ export default class Clients extends React.Component {
     newClient.vacansy = values.vacansy;
     newClient.phone = [];
     newClient.email = [];
-    newClient.raitingResume = values.raitingResume ? values.raitingResume : 1; // need to change
-    newClient.raitingTets = values.raitingTets ? values.raitingTets : 1; // need to change
-    newClient.raitingInterview = values.raitingInterview ? values.raitingInterview : 1;// need to change
+    console.log(values);
+    newClient.raitingResume = values.raitingResume ? +values.raitingResume : 1; // need to change
+    newClient.raitingTets = values.raitingTets ? +values.raitingTets : 1; // need to change
+    newClient.raitingInterview = values.raitingInterview ? +values.raitingInterview : 1;// need to change
     newClient.favorite = false;
 
     for (let item in values) {

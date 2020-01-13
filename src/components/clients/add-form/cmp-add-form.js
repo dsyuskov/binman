@@ -91,21 +91,21 @@ class AddForm extends React.Component {
             <div className="form__rating-container">
               <FieldRaiting 
                 title="Оценка резюме"
-                name="resume"
+                name="raitingResume"
                 required="required"
-                onChange={(val)=> this.props.change('raitingResume',val)}
+                //onChange={(val)=> this.props.change('raitingResume',val)}
               />
               <FieldRaiting
                 title="Оценка тестового задания"
-                name="test"
+                name="raitingTets"
                 required="required"
-                onChange={(val)=> this.props.change('raitingTets',val)}
+                //onChange={(val)=> this.props.change('raitingTets',val)}
               />
               <FieldRaiting
                 title="Оценка собеседования"
-                name="interview"
+                name="raitingInterview"
                 required="required"
-                onChange={(val)=> this.props.change('raitingInterview',val)}
+                //onChange={(val)=> this.props.change('raitingInterview',val)}
               />
             </div>
             </div>
