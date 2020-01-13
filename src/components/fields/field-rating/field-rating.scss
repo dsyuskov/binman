@@ -8,6 +8,7 @@
 
   &__title {
     display: block;
+    margin-bottom: 0.5rem;
     color: $field-title-text;
     font-size: 1.1rem;
     font-weight: 700;
@@ -16,23 +17,17 @@
   }
 
   &__item {
-    margin-top: 0.5rem;
-    margin-right: 0.5rem;
+    margin-right: 0.3rem;
     cursor: pointer;
-
-    &--disabled {
-      cursor: default;
-    }
   }
-
 
   &__control {
     position: absolute;
     bottom: 0;
-    left: 0;
-    right: 0;
+    left: 4.8rem;
     margin: auto;
     width: 1px;
     height: 1px;
+    opacity: 0;
   }
 }
