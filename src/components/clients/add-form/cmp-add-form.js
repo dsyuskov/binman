@@ -37,12 +37,12 @@ class AddForm extends React.Component {
               placeholder="Введите ФИО"
               name="name"
               type="text"
-              required="required"
+              //required="required"
             />
             <FieldDropDown
               title="Вакансия"
               name="vacansy"
-              required="required"
+              //required="required"
               placeholder="Выберите вакансию"
               list={vacansyList}
             />
@@ -95,17 +95,17 @@ class AddForm extends React.Component {
               <FieldRaiting 
                 title="Оценка резюме"
                 name="raitingResume"
-                required="required"
+                // required="required"
               />
               <FieldRaiting
                 title="Оценка тестового задания"
                 name="raitingTets"
-                required="required"
+                // required="required"
               />
               <FieldRaiting
                 title="Оценка собеседования"
                 name="raitingInterview"
-                required="required"
+                // required="required"
               />
             </div>
             </div>

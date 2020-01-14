@@ -23,6 +23,16 @@ export default class Clients extends React.Component {
     this.props.showFavoritesClients();
   }
 
+  readAvatar(file) {
+    return new Promise((resolve)=>{
+      const reader = new FileReader();
+      reader.onload = () => {
+        resolve(reader.result)
+      };
+      reader.readAsDataURL(file);
+    })
+  }
+
   createClient = (values) => {
     const id = `f${(+new Date()).toString(16)}`;
     const newClient = {};
@@ -31,7 +41,6 @@ export default class Clients extends React.Component {
     newClient.vacansy = values.vacansy;
     newClient.phone = [];
     newClient.email = [];
-    console.log(values);
     newClient.raitingResume = values.raitingResume ? +values.raitingResume : 1; // need to change
     newClient.raitingTets = values.raitingTets ? +values.raitingTets : 1; // need to change
     newClient.raitingInterview = values.raitingInterview ? +values.raitingInterview : 1;// need to change
@@ -46,8 +55,9 @@ export default class Clients extends React.Component {
         newClient.email.push(values[item]);
       }
     }
-
-    this.props.addClient(newClient);
+    this.readAvatar(values.name).then(
+      () => this.props.addClient(newClient)
+    )
   }
 
   handleSubmit = (values) => {

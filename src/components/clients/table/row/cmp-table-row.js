@@ -42,7 +42,7 @@ export default class TableRow extends React.Component {
     return (
       <div className="table-row">
         <div className="table-row__column">
-          {avatar && <img className="table-row__avatar" src={require(`data/${avatar}`)} alt="avatar"/>}
+          {avatar && <img className="table-row__avatar" src={avatar} alt="avatar"/>}
           {!avatar && <img className="table-row__avatar" src={require("./icon-no-avatar.svg")} alt="avatar"/>}
           <div className="table-row__wrapper">
             <div className="table-row__data">{name}</div>
