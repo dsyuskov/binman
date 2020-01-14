@@ -23,7 +23,7 @@ export default class Clients extends React.Component {
     this.props.showFavoritesClients();
   }
 
-  readAvatar(file) {
+  loadAvatar = (file) => {
     return new Promise((resolve)=>{
       const reader = new FileReader();
       reader.onload = () => {
@@ -41,9 +41,9 @@ export default class Clients extends React.Component {
     newClient.vacansy = values.vacansy;
     newClient.phone = [];
     newClient.email = [];
-    newClient.raitingResume = values.raitingResume ? +values.raitingResume : 1; // need to change
-    newClient.raitingTets = values.raitingTets ? +values.raitingTets : 1; // need to change
-    newClient.raitingInterview = values.raitingInterview ? +values.raitingInterview : 1;// need to change
+    newClient.raitingResume = +values.raitingResume;
+    newClient.raitingTets = +values.raitingTets;
+    newClient.raitingInterview = +values.raitingInterview;
     newClient.favorite = false;
 
     for (let item in values) {
@@ -55,9 +55,16 @@ export default class Clients extends React.Component {
         newClient.email.push(values[item]);
       }
     }
-    this.readAvatar(values.name).then(
-      () => this.props.addClient(newClient)
-    )
+
+    if (values.photo && values.photo.type.match('image.*')) {
+      this.loadAvatar(values.photo)
+      .then( (resolve) => {
+        newClient.avatar = resolve
+        this.props.addClient(newClient)
+      })
+    } else {
+      this.props.addClient(newClient);
+    }
   }
 
   handleSubmit = (values) => {
